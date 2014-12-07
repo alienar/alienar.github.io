@@ -72,8 +72,8 @@ var World = {
 		var cssDivRight2 = " style='display: table-cell;vertical-align: middle; text-align: left; padding-right: 15px;'";
 		document.getElementById('loadingMessage').innerHTML =
 		"<div" + cssDivLeft + ">Scan Target &#35;1 (surfer) or &#35;2 (biker):</div>" +
-			"<div" + cssDivRight1 + "><img src='assets/surfer.png'></img></div>" +
-			"<div" + cssDivRight2 + "><img src='assets/bike.png'></img></div>";
+			"<div" + cssDivRight1 + "><img src='assets/a.png'></img></div>" +
+			"<div" + cssDivRight2 + "><img src='assets/b.png'></img></div>";
 
 		// Remove Scan target message after 10 sec.
 		setTimeout(function() {var e =document.getElementById('loadingMessage'); e.parentElement.removeChild(e);}, 10000);
