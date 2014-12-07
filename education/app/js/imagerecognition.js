@@ -21,7 +21,7 @@ var World = {
 			offsetX: -0.15,
 			offsetY: 0
 		});
-		var pageOne = new AR.Trackable2DObject(this.tracker, "a", {
+		var pageOne = new AR.Trackable2DObject(this.tracker, "a_track", {
 			drawables: {
 				cam: overlayOne
 			}
@@ -33,19 +33,19 @@ var World = {
 			offsetX: 0.12,
 			offsetY: -0.01
 		});
-		var pageTwo = new AR.Trackable2DObject(this.tracker, "b", {
+		var pageTwo = new AR.Trackable2DObject(this.tracker, "b_track", {
 			drawables: {
 				cam: overlayTwo
 			}
 		});
 		
-		// Create overlay for page three
+				// Create overlay for page three
 		var imgThree = new AR.ImageResource("assets/c.png");
 		var overlayThree = new AR.ImageDrawable(imgThree, 0.5, {
 			offsetX: 0.12,
 			offsetY: -0.01
 		});
-		var pageThree = new AR.Trackable2DObject(this.tracker, "c", {
+		var pageThree = new AR.Trackable2DObject(this.tracker, "c_track", {
 			drawables: {
 				cam: overlayThree
 			}
@@ -57,12 +57,11 @@ var World = {
 			offsetX: 0.12,
 			offsetY: -0.01
 		});
-		var pageFour = new AR.Trackable2DObject(this.tracker, "d", {
+		var pageFour = new AR.Trackable2DObject(this.tracker, "d_track", {
 			drawables: {
 				cam: overlayFour
 			}
 		});
-		
 		
 	},
 
@@ -71,9 +70,7 @@ var World = {
 		var cssDivRight1 = " style='display: table-cell;vertical-align: middle; text-align: left; padding-right: 15px; width: 38px'";
 		var cssDivRight2 = " style='display: table-cell;vertical-align: middle; text-align: left; padding-right: 15px;'";
 		document.getElementById('loadingMessage').innerHTML =
-		"<div" + cssDivLeft + ">Scan Target &#35;1 (surfer) or &#35;2 (biker):</div>" +
-			"<div" + cssDivRight1 + "><img src='assets/a.png'></img></div>" +
-			"<div" + cssDivRight2 + "><img src='assets/b.png'></img></div>";
+		"<div" + cssDivLeft + ">Education Scan</div>" ;
 
 		// Remove Scan target message after 10 sec.
 		setTimeout(function() {var e =document.getElementById('loadingMessage'); e.parentElement.removeChild(e);}, 10000);
