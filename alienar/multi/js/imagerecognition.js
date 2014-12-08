@@ -6,6 +6,7 @@ var World = {
 		AR.context.services.sensors = false;
 		this.createOverlays();
 	},
+	
 sound1: null,
 sound2: null,
 
@@ -49,9 +50,10 @@ loadAudio: function() {
 				cam: overlayOne
 				 },
         onEnterFieldOfVision: function() {
-            if (World.sound2 !== null) {
+            if (World.sound1 !== null) {
                 World.sound1.play();
             }
+			
 			}
 		});
 
