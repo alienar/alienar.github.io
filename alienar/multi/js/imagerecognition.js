@@ -6,7 +6,30 @@ var World = {
 		AR.context.services.sensors = false;
 		this.createOverlays();
 	},
+sound1: null,
+sound2: null,
 
+loadAudio: function() {
+    this.sound1 = new AR.Sound("assets/sound1.mp3", {
+        onLoaded: function() {
+            // if the sound finished loading
+        },
+        onError: function() {
+            // alert the user that the sound file could not be loaded
+        },
+    });
+
+    this.sound2 = new AR.Sound("assets/sound2.mp3", {
+        onLoaded: function() {
+            // if the sound finished loading
+        },
+        onError: function() {
+            // alert the user that the sound file could not be loaded
+        },
+    });
+},
+
+		
 	createOverlays: function createOverlaysFn() {
 		// Initialize Tracker
 		// Important: If you replace the tracker file with your own, make sure to change the target name accordingly.
@@ -24,6 +47,11 @@ var World = {
 		var pageOne = new AR.Trackable2DObject(this.tracker, "pageOne", {
 			drawables: {
 				cam: overlayOne
+				 },
+        onEnterFieldOfVision: function() {
+            if (World.sound2 !== null) {
+                World.sound1.play();
+            }
 			}
 		});
 
@@ -36,6 +64,12 @@ var World = {
 		var pageTwo = new AR.Trackable2DObject(this.tracker, "pageTwo", {
 			drawables: {
 				cam: overlayTwo
+				},
+        onEnterFieldOfVision: function() {
+            if (World.sound2 !== null) {
+                World.sound2.play();
+            }
+
 			}
 		});
 	},
