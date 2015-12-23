@@ -1,0 +1,161 @@
+/*
+Copyright (c) 2015 by daniesy (http://codepen.io/daniesy/pen/pfxFi)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+
+.float-right {
+  float: right;
+}
+
+.fa {
+  font-size: 1.0em;
+  line-height: 22px !important;
+}
+
+dropdown {
+  display: inline-block;
+  margin: 0px 0px; 
+}
+
+dropdown label, dropdown ul li {
+  display: block;
+  width: 250px;
+  background: #EFFFFE;
+  padding: 15px 20px;
+}
+
+dropdown label:hover, dropdown ul li:hover {
+  background: #1ABC9C;
+  color: white;
+  cursor: pointer;
+}
+
+dropdown label {
+  color: #1ABC9C;
+  border-left: 4px solid #1ABC9C;
+  border-radius: 0 5px 0 0;
+  position: relative;
+  z-index: 2;
+}
+
+dropdown input {
+  display: none;
+}
+
+dropdown input ~ ul {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  top: -20px;
+  z-index: 1;
+}
+
+dropdown input:checked + label {
+  background: #1ABC9C;
+  color: white;
+}
+
+dropdown input:checked ~ ul {
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+}
+
+dropdown ul li:nth-child(1) {
+  border-left: 4px solid #1B998B;
+}
+dropdown ul li:nth-child(1) .fa {
+  color: #1B998B;
+}
+dropdown ul li:nth-child(1):hover {
+  background: #1B998B;
+  color: white;
+}
+dropdown ul li:nth-child(1):hover .fa {
+  color: white;
+}
+
+dropdown ul li:nth-child(2) {
+  border-left: 4px solid #2D3047;
+}
+dropdown ul li:nth-child(2) .fa {
+  color: #2D3047;
+}
+dropdown ul li:nth-child(2):hover {
+  background: #2D3047;
+  color: white;
+}
+dropdown ul li:nth-child(2):hover .fa {
+  color: white;
+}
+
+dropdown ul li:nth-child(3) {
+  border-left: 4px solid #247BA0;
+}
+dropdown ul li:nth-child(3) .fa {
+  color: #247BA0;
+}
+dropdown ul li:nth-child(3):hover {
+  background: #247BA0;
+  color: white;
+}
+dropdown ul li:nth-child(3):hover .fa {
+  color: white;
+}
+
+dropdown ul li:nth-child(4) {
+  border-left: 4px solid #FF9B71;
+}
+dropdown ul li:nth-child(4) .fa {
+  color: #FF9B71;
+}
+dropdown ul li:nth-child(4):hover {
+  background: #FF9B71;
+  color: white;
+}
+dropdown ul li:nth-child(4):hover .fa {
+  color: white;
+}
+
+dropdown ul li:nth-child(5) {
+  border-left: 4px solid #E84855;
+}
+dropdown ul li:nth-child(5) .fa {
+  color: #E84855;
+}
+dropdown ul li:nth-child(5):hover {
+  background: #E84855;
+  color: white;
+}
+dropdown ul li:nth-child(5):hover .fa {
+  color: white;
+}
+
+
+
+.animate {
+  -webk4t-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  /* Chrome and Safari */
+  -moz-backface-visibility: hidden;
+  /* Firefox */
+  -ms-backface-visibility: hidden;
+  /* Internet Explorer */
+}5
