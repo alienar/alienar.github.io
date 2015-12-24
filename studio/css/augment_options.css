@@ -44,8 +44,8 @@ dropdown label:hover, dropdown ul li:hover {
 
 dropdown label {
   color: #1ABC9C;
-  border-left: 4px solid #1ABC9C;
-  border-radius: 0 5px 0 0;
+  border-left: 5px solid #1ABC9C;
+  border-radius: 5px 5px 5px 0;
   position: relative;
   z-index: 2;
 }
@@ -143,8 +143,6 @@ dropdown ul li:nth-child(5):hover .fa {
   color: white;
 }
 
-
-
 .animate {
   -webk4t-transition: all .3s;
   -moz-transition: all .3s;
@@ -158,4 +156,4 @@ dropdown ul li:nth-child(5):hover .fa {
   /* Firefox */
   -ms-backface-visibility: hidden;
   /* Internet Explorer */
-}5
+}

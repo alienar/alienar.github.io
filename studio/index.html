@@ -1,14 +1,20 @@
 <html><head>
     <meta name="description" content="Interactive World">
     <meta name="keywords" content="AR, Innovation, Augmented Reality">
-    <title>Augmented Reality</title>
+    <title>| alienar | creator |</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Skeleton Scripts  -->
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css\styles.css" rel="stylesheet" type="text/css">
-    <link href="css\augment_options.css" rel="stylesheet" type="text/css">
+    <!-- Augment Options CSS -->
+    <link href="css/augment_options.css" rel="stylesheet" type="text/css">
+    <!-- Marker Images CSS -->
+    <link href="css/marker_images.css" rel="stylesheet" type="text/css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css'>
+
   </head><body>
     <div class="navbar navbar-default navbar-static-top">
       <div class="container">
@@ -39,11 +45,16 @@
     <div class="section">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
-            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
+          <div class="col-md-3" id="dropzone-wrapper">
+            <!-- Marker Images Block -->
+              <div id="textbox-wrapper"><div id="textbox"></div></div>
+              <div id="dropzone"></div>
+              <div id="errormessages"><span style="display: none;"></span></div>
+              <!-- <div id="overlay"></div> -->
             <h2 class="text-left">Marker Images</h2>
             <div class="col-md">
-              <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
+              <!-- Target Images Block -->
+              <div id="output"><ul></ul></div>
               <h2>Target Images</h2>
             </div>
           </div>
@@ -94,7 +105,7 @@
         <div class="row">
           <div class="col-sm-6">
             <h1>Aryabhata Inc.</h1>
-            <p>Innovate-Recreate-Rejuvenate</p>
+            <p>Innovate Recreate Rejuvenate</p>
           </div>
           <div class="col-sm-6">
             <p class="text-info text-right">
@@ -121,6 +132,13 @@
         </div>
       </div>
     </footer>
+
+    <!-- Marker Images Scripts -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js'></script>
+    <script src='https://dl.dropboxusercontent.com/u/2241077/jquery.dragbetter.js'></script>
+    <script src='https://dl.dropboxusercontent.com/u/2241077/imageupload.js'></script>
+    <script src="js/marker_images.js"></script>
   
 
 </body></html>
