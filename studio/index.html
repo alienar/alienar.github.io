@@ -1,7 +1,7 @@
 <html><head>
     <meta name="description" content="Interactive World">
     <meta name="keywords" content="AR, Innovation, Augmented Reality">
-    <title>| alienar | creator |</title>
+    <title>| Creator : alienar |</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Skeleton Scripts  -->
@@ -14,6 +14,8 @@
     <!-- Marker Images CSS -->
     <link href="css/marker_images.css" rel="stylesheet" type="text/css">
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css'>
+    <!-- Target Images CSS -->
+    <link href="css/target_images.css" rel="stylesheet" type="text/css">
 
   </head><body>
     <div class="navbar navbar-default navbar-static-top">
@@ -50,17 +52,43 @@
               <div id="textbox-wrapper"><div id="textbox"></div></div>
               <div id="dropzone"></div>
               <div id="errormessages"><span style="display: none;"></span></div>
-              <!-- <div id="overlay"></div> -->
-            <h2 class="text-left">Marker Images</h2>
+            <h4 class="text-center">Marker Images</h4>
             <div class="col-md">
               <!-- Target Images Block -->
-              <div id="output"><ul></ul></div>
-              <h2>Target Images</h2>
+              <ul class="target">
+                  <input type="radio" name="radio-btn" id="img-1" checked />
+                  <li class="slide-container">
+                      <div class="slide" id="output">
+                        <img src="http://farm9.staticflickr.com/8072/8346734966_f9cd7d0941_z.jpg" class="img-responsive" />
+                      </div>
+                      <div class="nav">
+                          <label for="img-6" class="prev">&#x2039;</label>
+                          <label for="img-2" class="next">&#x203a;</label>
+                      </div>
+                  </li>
+              </ul>
+              <h4 class="text-center">Target Images</h4>
             </div>
           </div>
           <div class="col-md-6">
-            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
-            <h2 class="text-center">Augment Workspace</h2>
+              <ul class="slides">
+                  <input type="radio" name="radio-btn" id="img-1" checked />
+                  <li class="slide-container">
+                      <div class="slide" id="output">
+                          <img src="http://farm9.staticflickr.com/8072/8346734966_f9cd7d0941_z.jpg" class="img-responsive" />
+                      </div>
+                      <div class="nav">
+                          <label for="img-6" class="prev">&#x2039;</label>
+                          <label for="img-2" class="next">&#x203a;</label>
+                      </div>
+                  </li>
+              </ul>
+              <ul class="mini">
+                  <li class="nav-dots">
+                      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                  </li>
+              </ul>
+            <h3 class="text-center">Augment Workspace</h3>
             <div class="col-md text-center">
               <div class="btn-group">
                 <a href="#" class="btn btn-default">Design</a>
@@ -95,7 +123,7 @@
                 </ul>
               </dropdown>
             </div>
-            <h2>Widgets</h2>
+            <h4 class="text-center">Widgets</h4>
           </div>
         </div>
       </div>
@@ -139,6 +167,8 @@
     <script src='https://dl.dropboxusercontent.com/u/2241077/jquery.dragbetter.js'></script>
     <script src='https://dl.dropboxusercontent.com/u/2241077/imageupload.js'></script>
     <script src="js/marker_images.js"></script>
-  
+
+    <!-- Target Images Scripts -->
+
 
 </body></html>

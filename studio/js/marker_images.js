@@ -9,7 +9,7 @@ Works in Mozilla, Webkit & IE.
 */
 
 jQuery(document).ready(function($) {
-
+	
 	// Shared callback handler for processing output
 	var outputHandlerFunc = function(imgObj) {
 
@@ -39,7 +39,7 @@ jQuery(document).ready(function($) {
 
 
 		$(new Image()).on('load', function(e) {
-console.log('imgobj',e)
+			 console.log('imgobj',e)
 			var $wrapper = $('<li class="new-item"><div class="list-content"><span class="preview"></span><span class="type">' + imgObj.type + '<br>' + (e.target.width + '&times;' + e.target.height) + '<br>' + sizeInKB(imgObj.size) + '</span><span class="name">' + imgObj.name +'</span><span class="options"><span class="imagedelete" title="Remove image"></span></span></div></li>').appendTo('#output ul');
 			$('.imagedelete',$wrapper).one('click',function(e) {
 				$wrapper.toggleClass('new-item').addClass('removed-item');
